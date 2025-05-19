@@ -1,13 +1,14 @@
-﻿
-using th01.Data;
+﻿using th01.Data;
 using th01.Models.Interfaces;
 using th01.Models;
+using Microsoft.AspNetCore.Mvc;
 
-namespace coffeeshop.Models.Services
+namespace th01.Models.Services
 {
     public class ProductRepository : IProductRepository
     {
         private CoffeeshopDbContext dbContext;
+
         public ProductRepository(CoffeeshopDbContext dbContext)
         {
             this.dbContext = dbContext;
@@ -27,5 +28,6 @@ namespace coffeeshop.Models.Services
         {
             return dbContext.Products.Where(p => p.IsTrendingProduct);
         }
+       
     }
 }
