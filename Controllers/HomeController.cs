@@ -2,7 +2,6 @@ using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using th01.Models;
 using th01.Models.Interfaces;
-using Microsoft.AspNetCore.Mvc;
 
 namespace th01.Controllers
 {
