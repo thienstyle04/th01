@@ -5,7 +5,7 @@
 namespace th01.Migrations
 {
     /// <inheritdoc />
-    public partial class seeddata : Migration
+    public partial class addShoppingCartItem : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
